@@ -92,10 +92,35 @@
       display:flex;gap:18px;align-items:center;position:relative;z-index:1
     }
     .avatar{
-      width:96px;height:96px;border-radius:30px;display:grid;place-items:center;
-      background:linear-gradient(135deg,#152a49,#214f7c);border:1px solid var(--line);
-      font-size:2.4rem;font-weight:900;color:var(--accent);
-    }
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  overflow:hidden;
+  border:4px solid var(--accent);
+  background:none;
+  flex-shrink:0;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.profile{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.profile-info h3{
+  font-size:1.6rem;
+  margin-bottom:5px;
+}
+
+.profile-info p{
+  margin-bottom:10px;
+}
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
     .chip{padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.82rem;background:rgba(255,255,255,.04)}
     .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
@@ -176,7 +201,7 @@
     <section class="hero">
       <div>
         <div class="badge">● Individual e-Portfolio Example</div>
-        <h1>Nur Aisyah Binti Ahmad</h1>
+       <h1>Muhd [Nama Penuh Anda]</h1>
         <p style="font-size:1.1rem;max-width:760px">Bachelor of Information Technology (Informatics Media) student portfolio demonstrating web development, UI/UX design, multimedia content, database design, computer networking, and cybersecurity awareness.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View Projects</a>
@@ -186,15 +211,32 @@
       </div>
       <aside class="hero-card">
         <div class="profile">
-          <div class="avatar">NA</div>
-          <div>
-            <h3>Portfolio Theme</h3>
-            <p>Building creative, secure, and user-centred digital media solutions.</p>
-            <div class="chips">
-              <span class="chip">UI/UX</span><span class="chip">Web Media</span><span class="chip">Cyber Awareness</span><span class="chip">Interactive Learning</span>
-            </div>
-          </div>
+
+    <div class="avatar">
+        <img src="images/profile.jpg" alt="Profile Picture">
+    </div>
+
+    <div class="profile-info">
+
+        <h3>Muhd [Nama Penuh Anda]</h3>
+
+        <p>
+            Bachelor of Information Technology
+            (Informatics Media)
+        </p>
+
+        <div class="chips">
+            <span class="chip">Cybersecurity</span>
+            <span class="chip">Web Development</span>
+            <span class="chip">Networking</span>
+            <span class="chip">UI/UX Design</span>
+            <span class="chip">Multimedia</span>
+            <span class="chip">3D Modelling</span>
         </div>
+
+    </div>
+
+</div>
         <div class="stat-row">
           <div class="stat"><b>6</b><span class="mini">Project Artefacts</span></div>
           <div class="stat"><b>4</b><span class="mini">Career Paths</span></div>
