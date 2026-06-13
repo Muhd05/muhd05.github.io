@@ -66,7 +66,12 @@ background:
   width:42px;
   height:42px;
   border-radius:14px;
-  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  background:linear-gradient(
+135deg,
+#ff4fd8,
+#c026d3,
+#06b6d4
+);
   display:grid;
   place-items:center;
   color:#08131f;
@@ -192,20 +197,20 @@ background:
     .filter{padding:9px 12px;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:999px;color:var(--text);cursor:pointer}
     .filter.active{border-color:var(--accent);background:rgba(50,209,255,.13)}
     .project-card{overflow:hidden;padding:0}
-    .project-cover{height:120px;background:linear-gradient(135deg,rgba(50,209,255,.25),rgba(142,230,168,.15));display:grid;place-items:center;font-size:2.7rem}
+    .project-cover{height:120px;background:linear-gradient(135deg,rgba(255,79,216,.30),rgba(192,38,211,.20));display:grid;place-items:center;font-size:2.7rem}
     .project-body{padding:18px}
-    .tag{display:inline-block;margin:3px 3px 3px 0;font-size:.78rem;padding:5px 8px;border-radius:999px;background:rgba(50,209,255,.12);border:1px solid rgba(50,209,255,.22);color:var(--accent)}
+    .tag{display:inline-block;margin:3px 3px 3px 0;font-size:.78rem;padding:5px 8px;border-radius:999px;background:rgba(255,79,216,.12);border:1px solid rgba(255,79,216,.25);color:var(--accent)}
     .skill{margin:14px 0}
     .skill-top{display:flex;justify-content:space-between;font-weight:750;font-size:.93rem}
     .bar{height:10px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin-top:7px;border:1px solid var(--line)}
     .fill{
      height:100%;background:linear-gradient(90deg,
-    #64ffda,
-    #4fc3f7
-  );
+#ff4fd8,
+#c026d3
+);
   border-radius:999px;
-  box-shadow:
-    0 0 12px rgba(100,255,218,.4);
+box-shadow:
+0 0 12px rgba(255,79,216,.5);
   transition:width 1s ease;
 }
     .accordion{border:1px solid var(--line);border-radius:18px;margin:10px 0;overflow:hidden;background:rgba(255,255,255,.035)}
